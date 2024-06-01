@@ -1,15 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import ProductAdd from "./ProductAdd";
+import ProductEdit from "./ProductEdit";
 
-const Home = ({ products }) => {
+const Home = ({ products , onDeletProduct}) => {
   return (
     <>
       <Link to="/productAdd" className="btn btn-primary">
         + Tạo thêm sản phẩm
       </Link>
       <h1>Danh sach san pham</h1>
-      <table className="table" style={{ marginBottom: "50px" }}>
+      <table className="table table-striped table-bordered " style={{ marginBottom: "50px" }}>
         <thead>
           <tr>
             <th scope="col">Id</th>
@@ -40,10 +41,11 @@ const Home = ({ products }) => {
                 )}
               </td>
               <td>
-                <button type="button" className="btn btn-warning">
+                <Link to ={`/productEdit/${item.id}`}><button type="button" className="btn btn-warning" >
                   Sửa
                 </button>
-                <button type="button" className="btn btn-danger">
+                </Link>
+                <button type="button" onClick={()=> onDeletProduct(item.id)} className="btn btn-danger">
                   Xóa
                 </button>
               </td>

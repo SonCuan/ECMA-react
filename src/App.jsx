@@ -10,6 +10,7 @@ import Blog from "./pages/Blog";
 import DashBoard from "./pages/admin/DashBoard";
 import ProductAdd from "./pages/admin/ProductAdd";
 import ProductDetail from "./pages/ProductDetail";
+import ProductEdit from "./pages/admin/ProductEdit";
 import NotFound from "./pages/NotFound";
 import api from "./axios";
 
@@ -44,6 +45,36 @@ const handleSubmit = (data) => {
   })();
 };
 
+const handleEdit = (data) => {
+  console.log(data);
+  (async () => {
+    try {
+      const res = await api.patch(`/products/${data.id}`, data);
+      const newData = await api.get("/products");
+      setProducts(newData.data);
+
+      if (confirm("Bạn đã sửa thành công, bạn có muốn quay lại trang admin?")) {
+        navigate("/admin");
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  })();
+};
+const hanldDelete = (id) => {
+  (async ()=> { 
+    try {
+      const idComfirm = confirm("Bạn có muốn xóa sản phầm này không?");
+      if(idComfirm){
+          await api.delete(`/products/${id}`);
+          setProducts(products.filter((product) => product.id !== id));
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  }) ()
+}
+
 
 
   return (
@@ -58,8 +89,10 @@ const handleSubmit = (data) => {
           <Route path="/about" element={<About />} />
           <Route path="/Blog" element={<Blog />} />
           <Route path="/product-detail/:id" element={<ProductDetail />} />
-          <Route path="/admin" element={<DashBoard products={products} />} />
+          <Route path="/admin" element={<DashBoard products={products} onDeletProduct={hanldDelete} />} />
           <Route path="/ProductAdd" element={<ProductAdd  onAddProduct={handleSubmit} />} />
+         
+          <Route path="/ProductEdit/:id" element={<ProductEdit onAddProduct={handleEdit}  />} />
           <Route path="*" element={<NotFound />} />      
         </Routes>
       </main>
