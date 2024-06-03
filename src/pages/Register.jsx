@@ -4,6 +4,7 @@ import React from "react";
 import { useForm } from "react-hook-form";  
 import instance from "../axios";
 import authSchema from "./schenmaVaild/authSchema";
+import Button from '../components/Button';
 
 const Register = () => {
 	const {
@@ -44,8 +45,9 @@ const Register = () => {
 
 				<div className="mb-3">
 					<button className="btn btn-primary w-100" type="submit">
-						Đăng ký
+						Đăng ký                       
 					</button>
+                    <Button>Dang ky </Button>
 				</div>
 			</form>
 		</div>

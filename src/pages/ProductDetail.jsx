@@ -25,7 +25,8 @@ const ProductDetail = () => {
         <div className="col-6">
           <h2>{product.title}</h2>
           <p>{product.price}$</p>
-          <p>{product.brand}</p>
+          <p>Mo ta : {product.description}</p>
+          <p>{product.discountPercentage}</p>
         </div>
       </div>
     </div>
