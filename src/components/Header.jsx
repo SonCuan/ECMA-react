@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import * as React from "react";
 import "../index.scss";
 
+
 export default function Header() {
   return (
     <header>
@@ -37,6 +38,9 @@ export default function Header() {
               </a>
               <a className="nav-link a-hover" href="/Admin">
                 Admin
+              </a>
+              <a className="nav-link a-hover" href="/Register">
+                Register
               </a>
             </div>
           </div>

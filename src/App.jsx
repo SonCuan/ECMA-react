@@ -13,6 +13,7 @@ import ProductDetail from "./pages/ProductDetail";
 import ProductEdit from "./pages/admin/ProductEdit";
 import NotFound from "./pages/NotFound";
 import api from "./axios";
+import Register from "./pages/Register";
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -91,7 +92,7 @@ const hanldDelete = (id) => {
           <Route path="/product-detail/:id" element={<ProductDetail />} />
           <Route path="/admin" element={<DashBoard products={products} onDeletProduct={hanldDelete} />} />
           <Route path="/ProductAdd" element={<ProductAdd  onAddProduct={handleSubmit} />} />
-         
+          <Route path="/Register" element={<Register />} />
           <Route path="/ProductEdit/:id" element={<ProductEdit onAddProduct={handleEdit}  />} />
           <Route path="*" element={<NotFound />} />      
         </Routes>

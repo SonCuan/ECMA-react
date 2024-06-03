@@ -1,14 +1,9 @@
 import React from 'react'
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import * as z from 'zod';
+import productSchema from '../schenmaVaild/productSchema';
 
 
-const productSchema = z.object({
-  title : z.string ().min(6 ).max(50),
-  price : z.number ().min(0),
-  description : z.string ().min(0 ).max(50).optional(),
-})
 
 
 const ProductAdd = ({onAddProduct}) => {
