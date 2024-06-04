@@ -1,15 +1,10 @@
 import React, { useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import * as z from "zod";
 import { useParams } from "react-router-dom";
 import api from "../../axios";
+import productSchema from "../schenmaVaild/productSchema";
 
-const productSchema = z.object({
-  title: z.string().min(6).max(50),
-  price: z.number().min(0),
-  description: z.string().min(0).max(50).optional(),
-});
 
 
 

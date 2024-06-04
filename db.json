@@ -1,95 +1,24 @@
 {
   "users": [
     {
-      "id": 1,
-      "gender": "male",
-      "email": "atuny0@sohu.com",
-      "phone": "+63 791 675 8914",
-      "username": "atuny0",
-      "password": "9uQFF1Lh",
-      "birthDate": "2000-12-25",
-      "image": "https://robohash.org/Terry.png?set=set4"
+      "email": "sonquan2611@gmail.com",
+      "password": "$2a$10$BJD97P1JMU1kQMHiIHp8T.Oqmu5wtr5ydoAkjt1Y2lX8K/DSd2OiC",
+      "id": 1
     },
     {
-      "id": 2,
-      "gender": "male",
-      "email": "hbingley1@plala.or.jp",
-      "username": "hbingley1",
-      "password": "CQutx25i8r",
-      "image": "https://robohash.org/Sheldon.png?set=set4"
+      "email": "quannsph45143@fpt.edu.vn",
+      "password": "$2a$10$lBLxwRcP9BdQiepYx7D1fu5at.hC/wPajRqZDXQrxKga5vUzBEWom",
+      "id": 2
     },
     {
-      "id": 3,
-      "gender": "male",
-      "email": "rshawe2@51.la",
-      "phone": "+63 739 292 7942",
-      "username": "rshawe2",
-      "password": "OWsTbMUgFc"
+      "email": "quandz2611@gmail.com",
+      "password": "$2a$10$vNfGYLZQNlEN4rcuvbLNh.3fJdkhxH1pGEdauybm9qwAHJ.Pb23EW",
+      "id": 3
     },
     {
-      "email": "asdasdad@gmail.com",
-      "password": "$2a$10$9h/SaHSG.STLuzPm0WDmeeKZZUjHq6gjpvuTha7LFlHpjG0NV6mJm",
+      "email": "quannsph2611@gmail.com",
+      "password": "$2a$10$9xr1gytIcrPCOOIFV2ZbDeUmahD69lGtJdu2qMJ1EldckimgAU7UO",
       "id": 4
-    },
-    {
-      "email": "asdasdadsdsdsd@gmail.com",
-      "password": "$2a$10$8kWSNWDJxNTzPaeA/xfWIeXINwSGCVoe3izlrs3izpx1e6sqJa3oi",
-      "id": 5
-    },
-    {
-      "email": "asdasdadsdsdsdsdsdsd@gmail.com",
-      "password": "$2a$10$Pxx4eObv.mrLxTR3luyTO.qlny3fUfzulL2iKFpxG7X0HjCPzJan2",
-      "id": 6
-    },
-    {
-      "email": "asdasdadsdsdsdssssdsdsd@gmail.com",
-      "password": "$2a$10$TPU3gzytY5tV4GnClkyUb.9MQt7pFkqjoxiW/0OIkZ0927Kg/ANg.",
-      "id": 7
-    },
-    {
-      "email": "asdasddsd@gmail.com",
-      "password": "$2a$10$2/Xv/BNdqGnslUQnBAC6quduDAS7k0WDhxS/JEw6iBXsqjtkIMxsy",
-      "id": 8
-    },
-    {
-      "email": "asdasdsdsdsdsdsd@gmail.com",
-      "password": "$2a$10$oiXZ8Y2kqThzHgqZ7c5FXuRazfTlR7FFGto5TWg8es18ij3IuWdqG",
-      "id": 9
-    },
-    {
-      "email": "asdasdsdsdsdsdsssd@gmail.com",
-      "password": "$2a$10$881XR65gKMkmfnsfW2Q2Auk0z1N0GWyW5OJthHOA9U5tttLq0sSdW",
-      "id": 10
-    },
-    {
-      "email": "asdasdsdsdsdsdsdsdsdsssd@gmail.com",
-      "password": "$2a$10$yh3VScyBubHATbJftVH9QOHQJk0xHG/oGMkOMtmu/LYHkb/GSkiWG",
-      "id": 11
-    },
-    {
-      "email": "asdasdsdsdsdssdsdsdsdsdsdsssd@gmail.com",
-      "password": "$2a$10$120QLAPBzk8AbOp8E2IfqOWcTUSgIwtnEx/7aKjoRvL5LzOxQtLQe",
-      "id": 12
-    },
-    {
-      "email": "dsdsdsdsdsssd@gmail.com",
-      "password": "$2a$10$28FauQZ/YCA7gHLfX8/r9euNT8JOSqNuH8TltK5alopox2JyPlu9a",
-      "id": 13
-    },
-    {
-      "email": "wewe@gmail.com",
-      "password": "$2a$10$CdIngzDd1Vj1DxWhR3tDuOeO/oTMpnrbpnSw4NoRdRAF5OUw7HVUC",
-      "id": 14
-    },
-    {
-      "email": "hoang@gmail.com",
-      "password": "$2a$10$rqyFn41nHt/BA7bHbTi6YOiDIIbmpSvL.maLULb.p5cflXAM98cu2",
-      "id": 15
-    },
-    {
-      "email": "hoang1@gmail.com",
-      "password": "$2a$10$ifuUt7sJZQB/20x3EolZmurRYQLTpyJFAZloAG1hsUWgI.VfCAmW.",
-      "id": 16
     }
   ],
   "products": [

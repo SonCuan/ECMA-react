@@ -86,14 +86,17 @@ const hanldDelete = (id) => {
 
         <Routes>
           <Route path="/" element={<Home products={products} />} />
-          <Route path="/login" element={<Login />} />
+          
           <Route path="/about" element={<About />} />
           <Route path="/Blog" element={<Blog />} />
           <Route path="/product-detail/:id" element={<ProductDetail />} />
           <Route path="/admin" element={<DashBoard products={products} onDeletProduct={hanldDelete} />} />
           <Route path="/ProductAdd" element={<ProductAdd  onAddProduct={handleSubmit} />} />
-          <Route path="/Register" element={<Register />} />
           <Route path="/ProductEdit/:id" element={<ProductEdit onAddProduct={handleEdit}  />} />
+          
+          <Route path="/Register" element={<Register />} />
+          <Route path="/login" element={<Login />} />
+          
           <Route path="*" element={<NotFound />} />      
         </Routes>
       </main>
