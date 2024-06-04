@@ -19,32 +19,29 @@
       "email": "quannsph2611@gmail.com",
       "password": "$2a$10$9xr1gytIcrPCOOIFV2ZbDeUmahD69lGtJdu2qMJ1EldckimgAU7UO",
       "id": 4
+    },
+    {
+      "email": "quanasd2611@gmail.com",
+      "password": "$2a$10$CKizvy6dR/lreaTPdboI2uJkWx/tPjQutdH5gYKRrB5R5x.RAmB5K",
+      "id": 5
+    },
+    {
+      "email": "hihi@gmail.com",
+      "password": "$2a$10$ecLj6Zt6.RLuXxFaTetBIus6uO4Vv73RDqK/uH.8qCjd37WTbANw2",
+      "id": 6
+    },
+    {
+      "email": "nguyensonquan2611@gmail.com",
+      "password": "$2a$10$a7I3gCmndcX.Ew0/FD08PeX/zktvYPSgewxid.sYCbuh6I6dTX6aK",
+      "id": 7
     }
   ],
   "products": [
     {
-      "id": 2,
-      "title": "iPhone X",
-      "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
-      "price": 899,
-      "discountPercentage": 17.94,
-      "rating": 4.44,
-      "stock": 34,
-      "brand": "Apple",
-      "category": "smartphones",
-      "thumbnail": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg",
-      "images": [
-        "https://cdn.dummyjson.com/product-images/2/1.jpg",
-        "https://cdn.dummyjson.com/product-images/2/2.jpg",
-        "https://cdn.dummyjson.com/product-images/2/3.jpg",
-        "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg"
-      ]
-    },
-    {
       "id": 3,
       "title": "Samsung Universe 9",
       "description": "Samsung's new variant which goes beyond Galaxy to the Universe",
-      "price": 1249,
+      "price": 123123,
       "discountPercentage": 15.46,
       "rating": 4.09,
       "stock": 36,
@@ -554,12 +551,6 @@
         "https://cdn.dummyjson.com/product-images/30/3.jpg",
         "https://cdn.dummyjson.com/product-images/30/thumbnail.jpg"
       ]
-    },
-    {
-      "title": "Do dung dang cap",
-      "price": 2000,
-      "description": "Con me Y5",
-      "id": 31
     }
   ]
 }

@@ -2,8 +2,8 @@ import React, { useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useParams } from "react-router-dom";
-import api from "../../axios";
-import productSchema from "../schenmaVaild/productSchema";
+import productSchema from "./schenmaVaild/productSchema";
+import api from "../axios";
 
 
 

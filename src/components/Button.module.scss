@@ -1,5 +1,5 @@
 .btnCustom {
-	background-color: white;
+	background-color: #0dcaf0;
 	color: black;
 	border-radius: 6px;
 	border: 1px solid black;
@@ -7,7 +7,7 @@
 	min-width: 40px;
 	transition: all 0.3s ease-in-out;
 	&:hover {
-		background-color: #ffc107;
+		background-color: #8ad7e7;
 		color: blue;
 	}
 }

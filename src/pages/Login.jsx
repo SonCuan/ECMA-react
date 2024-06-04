@@ -2,7 +2,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import React from "react";
 import { useForm } from "react-hook-form";
 import authSchema from "./schenmaVaild/authSchema";
-// import Button from "../components/Button";
+import Button from "../components/Button";
 import api from "./../axios/index";
 import { useNavigate } from "react-router-dom";
 
@@ -64,7 +64,7 @@ const Login = () => {
           <button className="btn btn-primary w-100" type="submit">
             Đăng nhập
           </button>
-          
+          <Button>Đăng ký </Button>
         </div>
       </form>
     </div>

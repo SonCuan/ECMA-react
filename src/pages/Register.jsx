@@ -4,8 +4,10 @@ import { useForm } from "react-hook-form";
 import authSchema from "./schenmaVaild/authSchema";
 import Button from "../components/Button";
 import api from "./../axios/index";
+import { useNavigate } from "react-router-dom";
 
 const Register = () => {
+  const nav = useNavigate();
   const {
     register,
     handleSubmit,
@@ -17,7 +19,9 @@ const Register = () => {
     (async () => {
       try {
         const res = await api.post(`/register`, data);
-        console.log(res);
+        if(confirm("Bạn có muốn chuyển đến trang Login không?")){
+          nav("/login");
+        }
       } catch (error) {
         console.log(error);
       }
