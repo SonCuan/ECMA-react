@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import ProductAdd from "./pages/ProductAdd";
 import ProductEdit from "./pages/ProductEdit";
+import AuthForm from "./pages/AuthForm";
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -24,12 +25,11 @@ function App() {
 
   // Phan gui submit
   const handleSubmit = (data) => {
-    console.log(data);
     (async () => {
       try {
         const res = await api.post("/products", data);
         setProducts([...products, res.data]);
-        if (confirm("Add succefully, redirect to admin page?")) {
+        if (confirm("Bạn đã thêm thành công, bạn có muốn quay lại trang chủ?")) {
           navigate("/");
         }
       } catch (error) {
@@ -99,8 +99,10 @@ function App() {
             path="/ProductEdit/:id"
             element={<ProductEdit onAddProduct={handleEdit} />}
           />
-          <Route path="/Register" element={<Register />} />
-          <Route path="/login" element={<Login />} />
+           {/* <Route path="/Register" element={<Register/>} />
+          <Route path="/login" element={<Login  />} /> */}
+          <Route path="/Register" element={<AuthForm  isRegister/>} />
+          <Route path="/login" element={<AuthForm  />} />
         </Routes>
       </main>
       {/* <Footer /> */}

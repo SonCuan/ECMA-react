@@ -34,6 +34,41 @@
       "email": "nguyensonquan2611@gmail.com",
       "password": "$2a$10$a7I3gCmndcX.Ew0/FD08PeX/zktvYPSgewxid.sYCbuh6I6dTX6aK",
       "id": 7
+    },
+    {
+      "email": "minh123@gmail.com",
+      "password": "$2a$10$TjyLypWxtUX7gnahzkeWU.NhFQmeVjRL0ujAvc09.P2r5UW6D50Pe",
+      "id": 8
+    },
+    {
+      "email": "hiha123@gmail.com",
+      "password": "$2a$10$OhXx722q63nwls1S9HAeTOxBeuoNaybdmQrr0jE13YSs9sLqW3BLe",
+      "id": 9
+    },
+    {
+      "email": "soncuan2611@gmail.com",
+      "password": "$2a$10$Aa72/sGbR8E6Aqlq71rd3uu.Zt3uYkUtbqbxpdfEwAcOPjH2/p21i",
+      "id": 10
+    },
+    {
+      "email": "haha21@gmail.com",
+      "password": "$2a$10$kOZjuSssPE415MFeQhxSouj/cOGO8i58dybhOeVwu07KxpcN52JhW",
+      "id": 11
+    },
+    {
+      "email": "hoho@gmail.com",
+      "password": "$2a$10$gsI0vhzFFDD2mHkbNOycyelFZAJGCPppv2S7lLE9ECgugQzS1TmKK",
+      "id": 12
+    },
+    {
+      "email": "hiha@gmail.com",
+      "password": "$2a$10$Rm19.7la8QE1fHTHmg2mQesi54Q2J4QSmdKBkTLf49DAfQsMCr0aK",
+      "id": 13
+    },
+    {
+      "email": "trashy5@gmail.com",
+      "password": "$2a$10$4HWBm1c385PUEPGmzqCzFOePRI65H.ZErz6fWk9AuMUmzGsBCLLpS",
+      "id": 14
     }
   ],
   "products": [
@@ -551,6 +586,18 @@
         "https://cdn.dummyjson.com/product-images/30/3.jpg",
         "https://cdn.dummyjson.com/product-images/30/thumbnail.jpg"
       ]
+    },
+    {
+      "title": "san pham new",
+      "price": 200,
+      "description": "Dep",
+      "id": 31
+    },
+    {
+      "title": "new product",
+      "price": 2100,
+      "description": "Phu Quoc-Ha Noi",
+      "id": 32
     }
   ]
 }
