@@ -36,7 +36,7 @@ const AuthForm = ({ isRegister }) => {
                 "Bạn đã đăng nhập thành công, bạn có muốn chuyển đến trang chủ không?"
               )
             ) {
-              nav("/");
+              nav("/admin");
             }
           }
         

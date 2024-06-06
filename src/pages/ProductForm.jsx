@@ -5,7 +5,8 @@ import { useParams } from "react-router-dom";
 import productSchema from "./schenmaVaild/productSchema";
 import api from "../axios";
 
-const ProductAdd = ({ onAddProduct }) => {
+const ProductForm = ({ onAddProduct }) => {
+
   const {
     register,
     reset,
@@ -21,6 +22,7 @@ const ProductAdd = ({ onAddProduct }) => {
     console.log(data);
     onAddProduct({ ...data, id });
   };
+  if(id) {
   useEffect(() => {
     (async () => {
       try {
@@ -31,12 +33,12 @@ const ProductAdd = ({ onAddProduct }) => {
       }
     })();
   }, []);
-
+  }
   return (
     <div>
-      <form onSubmit={handleSubmit(onSubmit)}>
+      <form onSubmit={handleSubmit((data) => onAddProduct({ ...data, id })) }>
         <fieldset>
-          <legend>Sua san pham</legend>
+          <legend>{id ? "Sua san pham" : " Them san pham"}</legend>
           <div className="mb-3">
             <label htmlFor="disabledTextInput" className="form-label">
               {" "}
@@ -84,7 +86,7 @@ const ProductAdd = ({ onAddProduct }) => {
           </div>
 
           <button type="submit" className="btn btn-danger w-100">
-            Cập nhật
+             {id ? "Sua san pham" : " Them san pham"}
           </button>
         </fieldset>
       </form>
@@ -92,4 +94,4 @@ const ProductAdd = ({ onAddProduct }) => {
   );
 };
 
-export default ProductAdd;
+export default ProductForm;

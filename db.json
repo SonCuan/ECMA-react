@@ -69,14 +69,19 @@
       "email": "trashy5@gmail.com",
       "password": "$2a$10$4HWBm1c385PUEPGmzqCzFOePRI65H.ZErz6fWk9AuMUmzGsBCLLpS",
       "id": 14
+    },
+    {
+      "email": "conmethanghopy5@gmail.com",
+      "password": "$2a$10$Ntcjpp5A/QV0n3qjGK0tUeY9DNcguu8jOQMf9NgwzYZZ2/48CY0DC",
+      "id": 15
     }
   ],
   "products": [
     {
       "id": 3,
-      "title": "Samsung Universe 9",
-      "description": "Samsung's new variant which goes beyond Galaxy to the Universe",
-      "price": 123123,
+      "title": "Iphone đẳng cấp thế giới",
+      "description": "trash Y5",
+      "price": 35000,
       "discountPercentage": 15.46,
       "rating": 4.09,
       "stock": 36,
@@ -586,18 +591,6 @@
         "https://cdn.dummyjson.com/product-images/30/3.jpg",
         "https://cdn.dummyjson.com/product-images/30/thumbnail.jpg"
       ]
-    },
-    {
-      "title": "san pham new",
-      "price": 200,
-      "description": "Dep",
-      "id": 31
-    },
-    {
-      "title": "new product",
-      "price": 2100,
-      "description": "Phu Quoc-Ha Noi",
-      "id": 32
     }
   ]
 }

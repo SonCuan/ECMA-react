@@ -20,7 +20,7 @@ const Login = () => {
       try {
          await api.post(`/Login`, data);
         if(confirm("Bạn đã đăng nhập thành công, b có muốn chuyển đến trang chủ không?")){
-          nav("/");
+          nav("/admin");
         }
       } catch (error) {
         alert(error?.response?.data);
