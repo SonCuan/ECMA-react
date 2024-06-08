@@ -9,7 +9,7 @@ import ProductForm from "./pages/ProductForm";
 
 function App() {
   const [products, setProducts] = useState([]);
-  const navigate = useNavigate();
+  const nav = useNavigate();
   const user = JSON.parse(localStorage.getItem("user"));
   useEffect(() => {
     (async () => {
@@ -33,7 +33,7 @@ function App() {
   const logout = () => {
     if(confirm("Are you sure you want to log out?")) {
       localStorage.removeItem("user");
-      navigate("/login");
+      nav("/login");
     }
   }
 
@@ -102,9 +102,6 @@ function App() {
             <Route path="/admin/ProductAdd" element={<ProductForm onAddProduct={handleProduct} />} />
             <Route path="/admin/ProductForm/:id" element={<ProductForm onAddProduct={handleProduct} />} />
           </Route> 
-            
-
-
            {/* <Route path="/Register" element={<Register/>} />
           <Route path="/login" element={<Login  />} /> */}
           <Route path="/Register" element={<AuthForm  isRegister/>} />

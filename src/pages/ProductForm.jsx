@@ -6,7 +6,6 @@ import productSchema from "./schenmaVaild/productSchema";
 import api from "../axios";
 
 const ProductForm = ({ onAddProduct }) => {
-
   const {
     register,
     reset,
@@ -22,21 +21,21 @@ const ProductForm = ({ onAddProduct }) => {
     console.log(data);
     onAddProduct({ ...data, id });
   };
-  if(id) {
-  useEffect(() => {
-    (async () => {
-      try {
-        const { data } = await api.get(`/products/${id}`);
-        reset(data);
-      } catch (error) {
-        console.log(error);
-      }
-    })();
-  }, []);
+  if (id) {
+    useEffect(() => {
+      (async () => {
+        try {
+          const { data } = await api.get(`/products/${id}`);
+          reset(data);
+        } catch (error) {
+          console.log(error);
+        }
+      })();
+    }, []);
   }
   return (
     <div>
-      <form onSubmit={handleSubmit((data) => onAddProduct({ ...data, id })) }>
+      <form onSubmit={handleSubmit((data) => onAddProduct({ ...data, id }))}>
         <fieldset>
           <legend>{id ? "Sua san pham" : " Them san pham"}</legend>
           <div className="mb-3">
@@ -86,7 +85,7 @@ const ProductForm = ({ onAddProduct }) => {
           </div>
 
           <button type="submit" className="btn btn-danger w-100">
-             {id ? "Sua san pham" : " Them san pham"}
+            {id ? "Sua san pham" : " Them san pham"}
           </button>
         </fieldset>
       </form>
